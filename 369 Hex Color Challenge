@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class HexConvertion {
+
+	static Scanner scanner = new Scanner(System.in);
+	public static void main(String[] args) {
+		hexColor();
+
+	}
+	public static void hexColor() {
+		System.out.print("Enter value for R: ");
+		String r = Integer.toHexString(Integer.parseInt(scanner.nextLine()));
+		System.out.print("Enter value for G: ");
+		String g = Integer.toHexString(Integer.parseInt(scanner.nextLine()));
+		System.out.print("Enter value for B: ");
+		String b = Integer.toHexString(Integer.parseInt(scanner.nextLine()));
+		
+		System.out.println("#" + r + g + b);
+		
+		
+		
+	}
+
+}
